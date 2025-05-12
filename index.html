@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunte à foca</title>
+</head>
+<body>
+    <h1>Pergunte à foca 🦭</h1>
+
+    <img height = 300px src="https://d1muf25xaso8hp.cloudfront.net/https://img.criativodahora.com.br/2024/09/criativo-66d615ec91110img-2024-09-0266d615ec91112.jpg?w=1000&h=&auto=compress&dpr=1&fit=max" alt="foca">
+
+    <div><input type="text" class="input1"> ou <input type="text" class="input2"> ? </div>
+
+    <button type='button' onclick="perguntou()">Perguntar</button>
+
+    <script>
+        function perguntou(){
+            var escolha = Math.floor(Math.random() * 10);
+            if (escolha%2)
+                alert("A foca escolheu: "+document.querySelector(".input1").value)
+            else
+                alert("A foca escolheu: "+document.querySelector(".input2").value)
+        }
+    </script>
+
+    <style>
+        body {
+            background: light-blue;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
